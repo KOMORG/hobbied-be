@@ -48,3 +48,18 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+source 'http://rubygems.org'
+
+gem 'haml'
+gem 'will_paginate'
+gem 'devise'
+
+group :development, :test do
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem 'haml-rails'
+  gem 'hpricot'
+  gem 'ruby_parser'
+  gem 'web-app-theme'
+end
